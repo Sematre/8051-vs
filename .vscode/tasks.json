@@ -11,7 +11,25 @@
 			"group": {
 				"kind": "build",
 				"isDefault": true
-			}
+			},
+			"presentation": {
+				"reveal": "never"
+			},
+			"problemMatcher": [
+				{
+					"owner": "ASEM-51",
+					"fileLocation": "relative",
+					"pattern": [
+						{
+							"regexp": "^(.+\\.a51)\\((\\d+),(\\d+)\\):\\s*(.+)$",
+							"file": 1,
+							"line": 2,
+							"column": 3,
+							"message": 4
+						}
+					]
+				}
+			]
 		}
 	]
 }

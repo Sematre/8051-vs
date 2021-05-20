@@ -14,4 +14,4 @@ clean:
 	@find . -name *.hex -delete
 
 %.hex %.lst: %.a51
-	asem $^
+	asem -c $^
